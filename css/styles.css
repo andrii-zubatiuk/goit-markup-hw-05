@@ -144,6 +144,7 @@ img {
 .page-nav {
   display: flex;
   align-items: center;
+  width: 100%;
 }
 
 .site-logo {
@@ -154,7 +155,7 @@ img {
   font-weight: 300;
   color: #555252;
   text-decoration: none;
-  padding: 5px;
+  /* padding: 5px; */
 }
 
 .site-logo:first-letter {
@@ -394,6 +395,28 @@ img {
 .product-list-item:hover .product-price,
 .product-list-item:focus .product-price {
   background-color: #7fd9c7;
+}
+
+.product-list-item .overlay {
+  position: relative;
+}
+
+.product-list-item .overlay::before {
+  display: none;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  right: 10px;
+  bottom: 10px;
+  width: 235px;
+  height: 302px;
+  content: '';
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.product-list-item:hover .overlay::before,
+.product-list-item:focus .overlay::before {
+  display: block;
 }
 
 .section-title {
