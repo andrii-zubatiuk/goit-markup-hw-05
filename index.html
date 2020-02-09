@@ -7,6 +7,7 @@
       href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700|Roboto:300,900&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="./css/pe-icon-7-stroke.css">
     <link rel="stylesheet" href="./css/normalize.css" />
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
@@ -34,7 +35,7 @@
           </li>
         </ul>
       </div>
-      <div class="container">
+      <div class="nav-container">
         <nav class="page-nav">
           <a href="" class="site-logo">Mart</a>
           <ul class="site-nav list">
@@ -52,8 +53,9 @@
     <main>
       <div class="banner">
         <div class="hero">
-          <h1>
-            <span class="hero-first-line">Dresses</span> &amp;
+          <h1 class="hero-title list">
+            <span class="hero-first-line">Dresses</span>
+            <span class="ampersand">&amp;</span>
             <span class="hero-first-line">jeans</span><br /><span
               class="hero-second-line"
               >from ourfamous brands</span
@@ -63,10 +65,11 @@
           <a href="" class="hero-link">Buy now</a>
         </div>
       </div>
+
       <section class="section-advantages">
         <div class="container">
           <ul class="advantages-list list">
-            <li class="advantages-list-item">
+            <li class="advantages-list-item settings">
               <h3 class="advantages-title list">Settings</h3>
               <p class="advantages-description list">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad
@@ -75,7 +78,7 @@
                 quis autem.
               </p>
             </li>
-            <li class="advantages-list-item">
+            <li class="advantages-list-item money-back">
               <h3 class="advantages-title list">Money back</h3>
               <p class="advantages-description list">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad
@@ -84,7 +87,7 @@
                 quis autem.
               </p>
             </li>
-            <li class="advantages-list-item">
+            <li class="advantages-list-item worldwide">
               <h3 class="advantages-title list">Worldwide shipping</h3>
               <p class="advantages-description list">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad
@@ -93,7 +96,7 @@
                 quis autem.
               </p>
             </li>
-            <li class="advantages-list-item">
+            <li class="advantages-list-item compass">
               <h3 class="advantages-title list">Worldwide shipping</h3>
               <p class="advantages-description list">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad
@@ -306,16 +309,18 @@
       </section>
 
       <footer>
-        <div class="container">
-          <h2 class="section-title">Newsletter</h2>
-          <p class="footer-description">
+        <div class="footer-container">
+          <h2 class="footer-title list">Newsletter</h2>
+          <p class="footer-description list">
             Follow a collection of news &amp; promotions
           </p>
-          <input
-            type="email"
-            placeholder="Enter your email here"
-            class="footer-input"
-          />
+          <div class="input">
+            <input
+              type="email"
+              placeholder="Enter your email here"
+              class="footer-input"
+            />
+          </div>
         </div>
       </footer>
     </main>
